@@ -26,7 +26,7 @@ Table of contents
 		d. Benefits
 		e. Post previews
 		f. CTA
-	5. Responsive styles
+	5. Media queries
 */
 
 /* Typography */
@@ -111,7 +111,7 @@ textarea {
 	text-align: right;
 }
 
-.main-navigation a, #menu-button {
+.mainMenu a, #menu-button {
 	color: #222222;
 	font-family: "Cabin", Helvetica, sans-serif;
 	font-size: 20px;
@@ -127,6 +127,10 @@ textarea {
 	margin-left: 30px;
 }
 
+.main-navigation ul > .focus > a {
+	color: inherit;
+}
+
 .nav-menu > li > a:after {
 	display: none;
 }
@@ -137,10 +141,22 @@ textarea {
 	line-height: 86px; 
 }
 
+#navTitle a {
+	color: #222222;
+	display: block;
+	font-size: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	padding: 0;
+	text-decoration: none;
+	text-transform: none;
+}
+
 /* Header navigation | Smaller menu */
 
-.menu-header-nav-menu-container {
-	margin-right: 40px;
+.mainMenu {
+	margin-right: 40px !important;
 }
 
 .menu-toggle {
@@ -378,11 +394,20 @@ textarea {
 	vertical-align: middle;
 }
 
-/*Responsive styles*/
+/* Media Queries */
 
 /* Hide homepage header styling on smaller screens */
 @media screen and (max-width: 767px) {
 	.title span:before,
 	.title span:after {
 		display: none;
+}
+
+@media screen and (max-width: 430px) {
+	#navTitle a {
+		font-size: 3rem;
+	}
+	#menu-button {
+		font-size: 1.75rem;
+	}
 }

@@ -26,9 +26,11 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div id="navContainer">
+				<h1 id="navTitle"><a href="<?php get_site_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 				<button class="menu-toggle" id="menu-button" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Menu', 'argent' ); ?></button>
-				<h1 id="navTitle"><?php bloginfo( 'name' ); ?></h1>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<div class="mainMenu">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</div>
 			</div>
 		</nav><!-- #site-navigation -->
 		
