@@ -1,0 +1,11 @@
+/*
+Theme Name: Argent
+Description: Used to style the TinyMCE editor.
+*/
+
+/* =Global
+-------------------------------------------------------------- */
+
+html .mceContentBody {
+	max-width: 100%;
+}

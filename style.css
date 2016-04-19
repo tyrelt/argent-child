@@ -48,7 +48,28 @@ textarea {
 	color: #222222;
 }
 
+blockquote {
+	border-left: 3px solid #85b352;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+
+.postContent ul, ol {
+	margin-left: 30px;
+}
+
 /* Buttons, general styles, misc. */
+
+html {
+	background-color: #222;
+}
+
+.page-header {
+	color: white;
+	text-align: center;
+}
+
 
 #main {
 	margin-top: 0;
@@ -88,6 +109,20 @@ textarea {
 	margin-top: 15px;
 	display: inline-block;
 	line-height: normal;
+}
+
+.lpBtn {
+	border: 3px solid white;
+  	border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    display: inline-block;
+    background-color: #222;
+}
+
+.lpBtn:hover {
+	background-color: white;
+	color: #222;
 }
 
 .footer-widget-area {
@@ -236,11 +271,15 @@ textarea {
 
 .hero {
 	width: 100%;
-	min-height: 600px;
 	background-size: cover; 
 	background-position: center top;
 	background-repeat: no-repeat; 
 	overflow: hidden;
+	background-color: #2aa7df;
+}
+
+.homeBG {
+	min-height: 600px
 }
 
 .heroText {
@@ -356,6 +395,7 @@ textarea {
 .postPreviewThumb {
 	border-radius: 5px;
 	margin-bottom: 15px;
+	width: 100%;
 }
 
 .avatar {
@@ -407,7 +447,11 @@ textarea {
 	#navTitle a {
 		font-size: 3rem;
 	}
+	#navTitle {
+		margin-left: 20px;
+	}
 	#menu-button {
 		font-size: 1.75rem;
+		margin-right: 20px;
 	}
 }
