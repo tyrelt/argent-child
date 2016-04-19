@@ -1,0 +1,151 @@
+/* Landing-page styling */
+
+.lpHero {
+	padding: 75px 0;
+	background-color: #222;
+	color: white;
+	text-align: center;
+}
+
+.titleContainer {
+	display: table;
+	margin: 0 auto 50px auto;
+}
+
+.titleContainer img {
+	width: 160px;
+}
+
+.titleText {
+	display: table-cell;
+    vertical-align: middle;
+    padding-left: 45px;
+    max-width: 98%;
+}
+ 
+.titleText h1 {
+	font-weight: 300;
+    letter-spacing: .07em;
+    font-size: 96px;
+    margin-bottom: 10px;
+    line-height: 96px;
+}   
+.titleText h2 {
+	letter-spacing: .5em;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 36px;
+}
+
+.landing p, a {
+	font-family: Lato, arial, sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.threeWide {
+	text-align: center;
+	padding: 75px 0;
+}
+
+.threeWide h2, .contactContainer h2 {
+	font-weight: 400;
+	font-size: 40px;
+	margin-bottom: 60px;
+	max-width: 98%;
+	line-height: normal;
+}
+
+.threeWide ul {
+	margin: 40px auto 0 auto;
+}
+
+.threeWide ul li img {
+	width: 100px;
+}
+
+.threeWide ul li {
+	text-decoration: none;
+	display: inline-block;
+	width: 300px;
+	padding: 0 25px;
+	margin-bottom: 35px;
+}
+
+.threeWide h3 {
+	font-family: lato, arial, sans-serif;
+	font-size: 32px;
+	font-weight: 300;
+	margin-top: 20px;
+}
+
+.contactLanding {
+	background-color: #eee;
+	padding: 75px 0;
+}
+
+.contactContainer {
+	max-width: 500px;
+	width: 94%;
+	margin: 0 auto;
+}
+.contact-form textarea, input[type=email], .contact-form input[type=text] {
+	width: 96% !important;
+	margin: 0 auto;
+	border: 1px solid #AAA;
+}
+
+.contact-form label {
+	font-family: lato, arial, sans-serif;
+	font-weight: 400 !important;
+	font-size: 24px;
+}
+
+.contact-submit {
+	text-align: center;
+}
+
+.contact-form input[type=submit] {
+	-webkit-appearance: none;
+	border: 3px solid #222;
+  	border-radius: 10px;
+    padding: 10px 15px;
+    color: #222;
+    display: inline-block;
+    background-color: white;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: lato;
+    text-transform: none;
+    line-height: inherit;
+    height: auto;
+}
+
+.contact-form input[type=submit]:hover{
+	background-color: #222;
+	color: white;
+}
+
+.lpFooter {
+	padding: 10px 0;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    font-family: lato, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px){
+	.titleText {
+		display: block;
+		padding: 0;
+	}
+	.titleText h1 {
+		font-size: 72px;
+	}
+	.titleText h2 {
+		font-size: 30px ;
+	}
+
+}
